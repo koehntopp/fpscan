@@ -1,0 +1,17 @@
+[package]
+name = "fpscan"
+version = "0.1.0"
+edition = "2024"
+license = "MIT"
+description = "AcoustID fingerprinter: writes ACOUSTID_FINGERPRINT tags into FLAC, MP3, M4A, Ogg, WAV"
+
+[dependencies]
+anyhow = "1"
+clap = { version = "4", features = ["derive"] }
+lofty = "0.25"
+rayon = "1"
+rusty-chromaprint = "0.3"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+symphonia = { version = "0.5", features = ["aac", "alac", "mp3", "isomp4"] }
+walkdir = "2"
